@@ -22,4 +22,5 @@ On rajoute la ligne de code suivante : pwd[i] = 'a', dans le else
 
 2.2)
 
-2.3) 26 puissance n
+2.3) 26^n -1
+
