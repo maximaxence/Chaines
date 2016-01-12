@@ -17,3 +17,9 @@ On rajoute la ligne de code suivante : pwd[i] = 'a', dans le else
  Par conséquent, la variable i se décrémentra jusqu'à -1 et une erreur sera générée car on essaiera d'insérer une valeur à un indice négatif dans pwd[]
 -Si la châine de caractère en entrée contient des caractères différents des lettres miniscules, ou si la châine est vide
 -Si la chaine en entrée ne contient aucun 'z' on sera dans une boucle infinie car l'indice du tableau n'est pas décrémenté
+
+2.1)
+
+2.2)
+
+2.3) 26 puissance n
