@@ -31,6 +31,51 @@ def getNext(password):
     
     return ''.join(pwd) #3 On retourne le nouveau mot de passe sous forme de chaîne de caractères
 
+def hasSeries(password):
+    pwd = list(password) 
+    i=0
+    ok = False
+
+    while i<len(pwd)-2:
+        if ord(pwd[i]) == ord(pwd[i+1]-1) == ord(pwd[i+2]-2):
+            ok = True
+        i = i+1
+
+    return ok
+
+def hasNoBadChar(password):
+    pwd = list(password)
+    i=0
+    ok = True
+
+    while i<len(pwd):
+        if pwd[i] == 'i' || pwd[i] == 'o' || pwd[i] == 'l':
+            ok = False
+        i = i+1
+
+    return ok
+
+def hasTwoPairs(password):
+    pwd = list(password)
+    i=0
+    j=0
+    nbPair = 0
+    tmp =''
+
+    while i<len(pwd):
+        while j<len(pwd):
+            if pwd[j] == pwd[i] && pwd[j] != tmp:
+                nbPair = nbPair +1
+                tmp = pwd[j]
+            j = j+1
+        i = i+1
+
+    if nbPair > 1:
+        return True
+
+    return False
+            
+    
 
 
 # Grâce à ce fragment de code, si vous exécutez ce fichier, les tests doctests seront exécutés également. 
