@@ -1,2 +1,19 @@
 Colombain Charly DASI1
 Villand Maxence DASI1
+
+1.1)
+#1 On récupère chaque caractère de la chaine du mot de passe. On stocke tous les caractères dans pwd.
+#2 Si le caractère est inférieur à z, alors on ajoute 1 au code ASCII récupéré grâce à la fonction ord() de ce caractère, et on écrase la nouvelle valeur du caractère
+#3 On retourne le nouveau mot de passe avec un espace entre chaque caractère.
+
+1.2)
+
+1.3)
+Il faut gérer le cas ou on a un 'z'
+On rajoute la ligne de code suivante : pwd[i] = 'a', dans le else
+
+1.4)
+-Dans le cas ou le mot de passe ne contient que des 'z', le booléen found ne passsera jamais à true car on ne rentrera jamais dans le if. 
+ Par conséquent, la variable i se décrémentra jusqu'à -1 et une erreur sera générée car on essaiera d'insérer une valeur à un indice négatif dans pwd[]
+-Si la châine de caractère en entrée contient des caractères différents des lettres miniscules, ou si la châine est vide
+-Si la chaine en entrée ne contient aucun 'z' on sera dans une boucle infinie car l'indice du tableau n'est pas décrémenté
